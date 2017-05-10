@@ -1,0 +1,178 @@
+body, html{
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+.website-container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+}
+
+header img {
+  height: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+header h3 {
+  margin: 0.66rem 1rem;
+}
+
+.main-banner {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.main-banner .content {
+  background-color: black;
+  color: white;
+  padding: 2rem 3rem;
+  width: 20rem;
+  position: relative;
+  top: 9rem;
+}
+
+.main-banner .content h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.main-banner .content h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav {
+  background-color: firebrick;
+}
+
+nav ul {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.product-grid {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.product-grid .item {
+  padding-top: 2rem;
+  border: 4px solid black;
+  margin-top: 3rem;
+  width: 30%;
+}
+
+.product-grid .item img {
+  height: 9rem;
+}
+
+.product-grid .item span {
+  display: block;
+  background-color: black;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.flex-container .location,
+.flex-container .hours {
+  width: 35%;
+}
+
+.flex-container .location h4,
+.flex-container .hours h4 {
+  background-color: black;
+  color: white;
+  padding: 1rem 0 1rem 2rem;
+}
+
+
+footer {
+  text-align: left;
+  height: 5rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.normal {
+  display: inline-block;
+}
+
+.special {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .product-grid .item {
+    width: 47%;
+  }
+  .flex-containter .location,
+  .flex-containter .hours  {
+    width:35%;
+  }
+  nav ul .normal {
+    display: none
+  }
+ .special {
+   display: block;
+ }
+.different{
+  display: none;
+}
+}
+
+@media only screen and (max-width: 470px){
+  .main-banner .content h4 {
+    font-size: 0.77rem;
+  }
+  .main-banner .content h1 {
+    font-size: 1rem;
+  }
+  .main-banner .content {
+    position: relative;
+    top: 10rem;
+    padding: 1rem 2rem;
+  }
+  .main-banner {
+    height: 15rem;
+  }
+  .flex-container {
+    display: block;
+    width: 90%;
+  }
+  .flex-container .hours {
+    margin: 0.5rem;
+  }
+  footer {
+    text-align: center;
+  }
+}
