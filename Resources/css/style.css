@@ -85,6 +85,10 @@ nav ul li a {
   height: 9rem;
 }
 
+.product-grid #special img {
+  width: 12rem;
+}
+
 .product-grid .item span {
   display: block;
   background-color: black;
@@ -96,7 +100,7 @@ nav ul li a {
 
 .flex-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 3rem;
   margin-bottom: 4rem;
 }
@@ -148,6 +152,9 @@ footer {
 .different{
   display: none;
 }
+#special{
+  display: none;
+}
 }
 
 @media only screen and (max-width: 470px){
@@ -160,19 +167,27 @@ footer {
   .main-banner .content {
     position: relative;
     top: 10rem;
+    height: 3rem;
     padding: 1rem 2rem;
+    width: 100%;
   }
   .main-banner {
     height: 15rem;
   }
   .flex-container {
-    display: block;
+    display: inline-block;
     width: 90%;
   }
   .flex-container .hours {
-    margin: 0.5rem;
+    margin-top: 0.5rem;
   }
-  footer {
+  .product-grid .item{
+    width: 90%;
+  }
+  #special-two{
+    display: none;
+  }
+  .copyright {
     text-align: center;
   }
 }
