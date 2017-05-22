@@ -176,18 +176,25 @@ footer {
   }
   .flex-container {
     display: inline-block;
-    width: 90%;
+    width: 100%; /*Why is this not filling 90% of the container*/
+    margin: 3rem auto 4rem auto;
   }
+
   .flex-container .hours {
     margin-top: 0.5rem;
   }
   .product-grid .item{
     width: 90%;
   }
+  .flex-container .location, .flex-container .hours  {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   #special-two{
     display: none;
   }
-  .copyright {
-    text-align: center;
+  footer {
+    justify-content: center;
   }
 }
